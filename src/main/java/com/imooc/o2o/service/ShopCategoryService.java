@@ -1,0 +1,28 @@
+/**   
+ * @Title: ShopService.java 
+ * @Package com.imooc.o2o.service 
+ * @Description: TODO(用一句话描述该文件做什么) 
+ * @author Xiu.Lu
+ * @date 2017年9月30日 下午10:09:00 
+ * @version V1.0    
+ */
+package com.imooc.o2o.service;
+
+import java.io.InputStream;
+import java.util.List;
+
+import org.apache.ibatis.annotations.Param;
+
+import com.imooc.o2o.entity.ShopCategory;
+
+/**   
+ * @ClassName ShopService   
+ * @Description: TODO (这里用一句话描述这个类的作用) 
+ * @author Xiu.Lu 
+ * @date 2017年9月30日 下午10:09:00 
+ * 
+ */
+public interface ShopCategoryService {
+
+	List<ShopCategory> queryShopCategory(ShopCategory shopCategoryCondition);
+}
